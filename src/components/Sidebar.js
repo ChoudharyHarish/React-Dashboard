@@ -8,6 +8,7 @@ import avatar from "../assets/avatar.jpeg";
 const Sidebar = () => {
     const [active, setActive] = useState('');
     const [open, setOpen] = useState(window.innerWidth > 1024);
+    const [mobile, setMobile] = useState(window.innerWidth < 1024);
 
     useEffect(() => {
         const handleResize = () => setOpen(window.innerWidth > 1024);
@@ -65,7 +66,7 @@ const Sidebar = () => {
                             <p className='text-gray-400 text-xs'>harish17@gmail.com</p>
                         </div>
                     </div>
-                    <div className={`${open && 'hidden'} cursor-pointer z-50`} onClick={() => setOpen(false)}>
+                    <div className={`${!mobile && 'hidden'} cursor-pointer z-50`} onClick={() => setOpen(false)}>
                         <Icon icon="ic:outline-close" width="28" height="28" style={{ color: 'white' }} />
                     </div>
                 </div>
