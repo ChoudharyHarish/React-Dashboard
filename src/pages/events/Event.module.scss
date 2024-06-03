@@ -1,0 +1,22 @@
+.mainContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  @media screen and (min-width: 1024px) {
+    padding: 2rem;
+    width: calc(100vw - 220px);
+    margin-left: auto;
+  }
+}
+
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}

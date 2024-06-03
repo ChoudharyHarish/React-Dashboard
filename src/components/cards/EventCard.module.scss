@@ -1,0 +1,30 @@
+.card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.info,
+.alert-info {
+  margin-top: 16px;
+}
+
+.info p,
+.alert-info p {
+  margin: 4px 0;
+}
+
+.alert-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
